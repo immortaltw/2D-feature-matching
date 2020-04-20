@@ -37,4 +37,10 @@ cd ../
 mkdir report
 mv *.csv report/
 
+which conda
+if [[ "$?" == 0 ]]; then
+    conda install -y pandas
+else 
+    pip install pandas
+fi
 python3 report_parser.py
