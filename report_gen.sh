@@ -5,7 +5,6 @@ rm -rf report *csv
 
 # Build
 rm -rf build && mkdir build && cd build && cmake ../ && make
-cd build
 
 # Hyper params
 DETECTOR_TYPES="HARRIS SHITOMASI FAST BRISK ORB"
